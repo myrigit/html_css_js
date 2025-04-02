@@ -1,8 +1,9 @@
 body{
   font-family: arial, sans-serif;
+  margin: 20px;
 }
 header{
-  min-height: 100px;
+  min-height: 50px;
   display: grid;
   align-items: center;
 }
