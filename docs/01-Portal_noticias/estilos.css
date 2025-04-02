@@ -12,10 +12,13 @@ div.logo{   /* cambia el color de toda la franja del div */
   height: 100%;   /* todo el tamaño del header donde está contenido */
   background-color: gray;
 }
-.logo img{
-  height: 60%;  /* 60% de su contenedor que es div.logo  */
+.logo img {
+  height: 60%;
   width: auto;
+  max-height: 100%;   /* importante para evitar desbordes */
+  display: block;
 }
+
 nav{
   background-color: lightgray;
   margin-top: 20px;
