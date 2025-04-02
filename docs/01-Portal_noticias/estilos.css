@@ -24,7 +24,9 @@ main{
   gap: 40px;   /* sin espacio entre 20 y px */
 }
 @media (max-width:768px){   /*diseño responsive para pantallas pequeñas, se pone todo en una única columna, desaparece scroll horizontal */
-  grid-template-columns: 1fr;
+  main{
+    grid-template-columns: 1fr;
+  }
 }
 aside{
   border: 1px solid gray;
