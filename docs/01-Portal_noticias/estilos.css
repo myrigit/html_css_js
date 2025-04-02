@@ -13,8 +13,11 @@ div.logo{
 }
 main{
   display: grid;
-  grid-template-columns: 1fr 3fr; /* con 1fr y 3fr se divide el espacio en 4 fracciones y se deja 1 para el aside y 3 para la section. también se puede poner 20% 80% pero si se pone el gap p algún margen ya se sale de la pantalla
+  grid-template-columns: 1fr 3fr; /* con 1fr y 3fr se divide el espacio en 4 fracciones y se deja 1 para el aside y 3 para la section. también se puede poner 20% 80% pero si se pone el gap p algún margen ya se sale de la pantalla */
   gap: 40px;   /* sin espacio entre 20 y px */
+}
+@media (max-width:768px){   /*diseño responsive para pantallas pequeñas, se pone todo en una única columna, desaparece scroll horizontal */
+  grid-template-columns: 1fr;
 }
 aside{
   border: 1px solid gray;
