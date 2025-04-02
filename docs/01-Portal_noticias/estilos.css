@@ -1,6 +1,6 @@
 main{
   display:grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr 3fr;
   gap: 20px;   /* sin espacio entre 20 y px */
 }
 aside{
