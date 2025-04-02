@@ -1,0 +1,57 @@
+/* 1. Fuente Arial para todo el sitio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* 2. Imagen como logotipo con altura relativa al header */
+.logo {
+  height: 100%;
+  background-image: url("cabecera.jpg");
+  background-size: auto 60%; /* altura 60% del contenedor */
+  background-repeat: no-repeat;
+  background-position: left center; /* alineado izquierda y centrado vertical */
+}
+
+header {
+  height: 100px;
+  overflow: hidden;
+}
+
+/* 3. Dos columnas en <main> usando Flexbox */
+main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 3b. Ajustamos los tamaños de aside y section manualmente */
+aside {
+  flex: 1;
+}
+
+section {
+  flex: 3;
+}
+
+/* 4. Responsive: una sola columna cuando pantalla <768px */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/* 5. Borde visible a cada columna */
+aside,
+section {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+/* 6. Footer centrado */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}

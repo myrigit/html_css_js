@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Noticias</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- 1. Etiqueta semántica header con logotipo -->
+  <header>
+    <div class="logo"></div> <!-- Imagen definida en CSS -->
+  </header>
+
+  <!-- 2. Menú de navegación con enlaces -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Noticias</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- 3. Menú desplegable con etiqueta asociada -->
+  <label for="categoria">Selecciona una opción:</label>
+  <select id="categoria" name="categoria">
+    <option>Ultimas noticias</option>
+    <option>Más leídas</option>
+    <option>Opinión</option>
+  </select>
+
+  <!-- 4. Main con dos columnas usando etiquetas semánticas aside y section -->
+  <main>
+    <aside>
+      <h2>Categorías</h2>
+      <ul>
+        <li>Política</li>
+        <li>Deportes</li>
+        <li>Tecnología</li>
+      </ul>
+    </aside>
+
+    <section>
+      <article>
+        <h2>Noticia 1</h2>
+        <p>Contenido de la noticia 1...</p>
+      </article>
+      <article>
+        <h2>Noticia 2</h2>
+        <p>Contenido de la noticia 2...</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- 5. Footer final con el texto indicado -->
+  <footer>
+    © 2025 Portal de Noticias
+  </footer>
+</body>
+</html>
