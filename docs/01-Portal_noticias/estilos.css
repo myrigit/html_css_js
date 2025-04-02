@@ -3,26 +3,17 @@ body{
   margin: 20px;
 }
 header{
-  height: 50px;
+  height: 100px;
   display: grid;
   align-items: center;
   background-color: gray;
 }
-
-/* no sirve de nada porque la imagen la he puesto en el html, no en el css, pero l odejo aquí como recordatorio
-  div.logo {
-  height: 60%;
-  /*  background-image: url("cabecera.jpg");  ya está en el HTML  */
-  background-size: contain; /* Ajusta la imagen sin deformarla */
-  background-position: left center; /* Alinea la imagen a la izquierda y centrada verticalmente */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-}
-*/
 div.logo{   /* cambia el color de toda la franja del div */
+  height: 100%   /* todo el tamaño del header donde está contenido */
   background-color: gray;
 }
 .logo img{
-  height: 60%;
+  height: 60%;  /* 60% de su contenedor que es div.logo  */
   width: auto;
 }
 nav{
