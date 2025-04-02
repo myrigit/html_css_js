@@ -2,16 +2,16 @@ body{
   font-family: arial, sans-serif;
 }
 header{
-  min-height:100px;
-  display:grid;
+  min-height: 100px;
+  display: grid;
   align-items: center;
 }
 div.logo{
   height: 60%;
-  background-image:url("logo_noticias.png");
+  background-image: url("cabecera.jpg");
 }
 main{
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 3fr; /* con 1fr y 3fr se divide el espacio en 4 frames y se deja 1 para el aside y otro para la section. también se puede poner 20% 80% pero si se pone el gap p algún margen ya se sale de la pantalla
   gap: 40px;   /* sin espacio entre 20 y px */
 }
