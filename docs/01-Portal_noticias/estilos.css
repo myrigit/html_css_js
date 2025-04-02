@@ -35,5 +35,6 @@ section{
   border: 2px dashed blue;
 }
 footer{
-  justify.self: center;
+  text-align: center;
+  margin-top: 20px;
 }
