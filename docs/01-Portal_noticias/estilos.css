@@ -6,10 +6,17 @@ header{
   display: grid;
   align-items: center;
 }
-div.logo{
+/* div.logo{
   height: 60%;
   justify-self: start; /* otras opciones center, end, o strech (se ajusta a todo el tamaño en horizontal) */
   background-image: url("cabecera.jpg");
+} */
+div.logo {
+  height: 60%;
+  background-image: url("cabecera.jpg");
+  background-size: contain; /* Ajusta la imagen sin deformarla */
+  background-position: left center; /* Alinea la imagen a la izquierda y centrada verticalmente */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 main{
   display: grid;
