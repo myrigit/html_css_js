@@ -1,3 +1,6 @@
+body{
+  font-family: arial, sans-serif;
+}
 main{
   display:grid;
   grid-template-columns: 1fr 3fr; /* con 1fr y 3fr se divide el espacio en 4 frames y se deja 1 para el aside y otro para la section. también se puede poner 20% 80% pero si se pone el gap p algún margen ya se sale de la pantalla
