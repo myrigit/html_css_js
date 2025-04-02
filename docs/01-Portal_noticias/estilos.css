@@ -6,17 +6,27 @@ header{
   min-height: 50px;
   display: grid;
   align-items: center;
+  background-color: gray;
 }
-/* div.logo{
-  height: 60%;
-  justify-self: start; /* otras opciones center, end, o strech (se ajusta a todo el tamaño en horizontal) */
-} */
-div.logo {
+
+/* no sirve de nada porque la imagen la he puesto en el html, no en el css, pero l odejo aquí como recordatorio
+  div.logo {
   height: 60%;
   /*  background-image: url("cabecera.jpg");  ya está en el HTML  */
   background-size: contain; /* Ajusta la imagen sin deformarla */
   background-position: left center; /* Alinea la imagen a la izquierda y centrada verticalmente */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+*/
+div.logo{   /* cambia el color de toda la franja del div */
+  background-color: gray;
+}
+.logo img{
+  height: 60%;
+  width: auto;
+}
+nav{
+  background-color: lightgray;
 }
 main{
   display: grid;
@@ -37,4 +47,5 @@ section{
 footer{
   text-align: center;
   margin-top: 20px;
+  background-color: gray;
 }
