@@ -1,5 +1,5 @@
 main{
   display:grid;
   grid-template-columns: 20% 80%;
-  gap: 20 px;
+  gap: 20px;   /* sin espacio entre 20 y px */
 }
