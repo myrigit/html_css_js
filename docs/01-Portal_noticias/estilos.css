@@ -9,7 +9,6 @@ header{
 /* div.logo{
   height: 60%;
   justify-self: start; /* otras opciones center, end, o strech (se ajusta a todo el tamaño en horizontal) */
-  background-image: url("cabecera.jpg");
 } */
 div.logo {
   height: 60%;
