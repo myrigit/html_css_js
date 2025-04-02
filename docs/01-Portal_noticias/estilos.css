@@ -34,3 +34,6 @@ aside{
 section{
   border: 2px dashed blue;
 }
+footer{
+  justify.self: center;
+}
