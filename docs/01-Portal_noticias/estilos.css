@@ -9,7 +9,7 @@ header{
   background-color: gray;
 }
 div.logo{   /* cambia el color de toda la franja del div */
-  height: 100%   /* todo el tamaño del header donde está contenido */
+  height: 100%;   /* todo el tamaño del header donde está contenido */
   background-color: gray;
 }
 .logo img{
