@@ -10,7 +10,6 @@ body{
 header{
    display:grid;
    max-height: 100px;
-   height: auto;
    align-items: center;
    overflow: hidden; 
    background-color: lightblue;
