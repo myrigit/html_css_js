@@ -11,7 +11,7 @@ header{
    display:grid;
    height: 80px;
    align-items: center;
-   /* overflow: hidden; no lo pongo porque entonces se recorta la imagen */
+   overflow: hidden; 
    background-color: lightblue;
 }
 header img{
