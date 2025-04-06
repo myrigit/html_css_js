@@ -9,7 +9,8 @@ body{
  }
 header{
    display:grid;
-   min-height: 100px;
+   max-height: 100px;
+   height: auto;
    align-items: center;
    overflow: hidden; 
    background-color: lightblue;
