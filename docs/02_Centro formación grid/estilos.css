@@ -21,3 +21,7 @@ header img{
    width: auto;
    justify-self: start;
 }
+nav {
+   background-color: aliceblue;
+   padding: 15px;
+}
