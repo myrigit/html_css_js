@@ -9,9 +9,9 @@ body{
  }
 header{
    display:grid;
-   height: 140px;
+   min-height: 100px;
    align-items: center;
-   overflow: visible; 
+   overflow: hidden; 
    background-color: lightblue;
 }
 header img{
@@ -25,4 +25,15 @@ nav {
    background-color: aliceblue;
    padding: 15px;
    margin-bottom: 30px;
+}
+main{
+   display:grid;
+   grid-template-columns: 1fr 3fr;
+   gap: 10px;
+}
+aside{
+   border-color: red;
+}
+section{
+   border-color: gray;
 }
