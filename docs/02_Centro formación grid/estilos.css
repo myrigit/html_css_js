@@ -1,0 +1,9 @@
+*{
+   box-sizing:border-box;
+}
+body{
+  font-family: Verdana,sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+ }
