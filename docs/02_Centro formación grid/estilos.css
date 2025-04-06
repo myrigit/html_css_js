@@ -44,6 +44,9 @@ section{
    }
 }
 footer{
-   background-color: galisboro;
+   background-color: gainsboro;
+   text-align: center;
+   padding: 10px;
+   margin-top: 20 px;
 }
 
