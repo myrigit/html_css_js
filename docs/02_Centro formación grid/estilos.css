@@ -1,54 +1,123 @@
-*{
-   box-sizing:border-box;
-}
-body{
-  font-family: Verdana,sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
- }
-header{
-   display:grid;
-   max-height: 100px;
-   align-items: center;
-   overflow: hidden; 
-   background-color: lightblue;
-}
-header img{
-   display: block;
-   height: 60%;
-   max-width: 100%;
-   width: auto;
-   justify-self: start;
-}
-nav {
-   background-color: aliceblue;
-   padding: 15px;
-   margin-bottom: 30px;
-}
-main{
-   display:grid;
-   grid-template-columns: 1fr 3fr;
-   gap: 10px;
-   margin: 20px;
-}
-aside{
-   border: 1px solid red;
-   padding: 20px;
-}
-section{
-   border: 1px solid gray;
-   padding: 20px;
-}
-@media (max-width: 768px){
-   main {
-      grid-template-columns: 1fr;
-   }
-}
-footer{
-   background-color: gainsboro;
-   text-align: center;
-   padding: 10px;
-   margin-top: 20 px;
+/* Aplica esta regla a todos los elementos de la página */
+* {
+  box-sizing: border-box; 
+  /* Hace que el padding y el borde se incluyan dentro del ancho y alto del elemento.
+     Esto evita cálculos raros de tamaños y desbordamientos inesperados. */
 }
 
+/* Estilos generales del cuerpo del documento */
+body {
+  font-family: Verdana, sans-serif; 
+  /* Fuente principal: Verdana. Si no está disponible, usa otra sans-serif. */
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* Márgenes verticales externos para separar el contenido de los bordes del navegador */
+
+  padding: 10px;
+  /* Espacio interno dentro del body */
+}
+
+/* Encabezado de la página, que contiene el logotipo */
+header {
+  display: grid; 
+  /* Se usa Grid aquí para alinear verticalmente la imagen */
+
+  max-height: 100px; 
+  /* Limita la altura del header. Si el contenido es más grande, puede desbordar */
+
+  align-items: center; 
+  /* Centra verticalmente los elementos dentro del grid */
+
+  overflow: hidden; 
+  /* Oculta el contenido que sobrepase la altura del header (como una imagen muy grande) */
+
+  background-color: lightblue; 
+  /* Fondo azul claro para diferenciar visualmente el encabezado */
+}
+
+/* Imagen del logotipo dentro del header */
+header img {
+  display: block; 
+  /* Elimina el espacio inferior que tienen las imágenes por defecto (por ser inline) */
+
+  height: 60%; 
+  /* La imagen ocupará el 60% de la altura del contenedor header */
+
+  max-width: 100%; 
+  /* No permitirá que la imagen se estire más allá del ancho del header */
+
+  width: auto; 
+  /* Mantiene la proporción original de la imagen */
+
+  justify-self: start; 
+  /* Alinea la imagen a la izquierda dentro de su celda de Grid */
+}
+
+/* Barra de navegación de enlaces */
+nav {
+  background-color: aliceblue; 
+  /* Color suave para distinguir el menú de navegación */
+
+  padding: 15px; 
+  /* Espacio interno para que los enlaces no queden pegados al borde */
+
+  margin-bottom: 30px; 
+  /* Espacio externo debajo del nav */
+}
+
+/* Contenedor principal de la página: contiene aside y section */
+main {
+  display: grid; 
+  /* Se usa CSS Grid para organizar el contenido en columnas */
+
+  grid-template-columns: 1fr 3fr; 
+  /* Define 2 columnas: una (aside) ocupa 1 fracción, la otra (section) 3 fracciones */
+
+  gap: 10px; 
+  /* Espacio horizontal y vertical entre las celdas del grid */
+
+  margin: 20px; 
+  /* Espacio exterior del main respecto a otros elementos */
+}
+
+/* Columna izquierda: aside */
+aside {
+  border: 1px solid red; 
+  /* Borde rojo visible para diferenciar visualmente la caja */
+
+  padding: 20px; 
+  /* Espacio interior para que el contenido no quede pegado al borde */
+}
+
+/* Columna derecha: sección principal con los artículos */
+section {
+  border: 1px solid gray; 
+  /* Borde gris como separación visual */
+
+  padding: 20px; 
+  /* Relleno interior como en el aside */
+}
+
+/* Diseño responsive: para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; 
+    /* Solo una columna: aside y section se colocan uno debajo del otro */
+  }
+}
+
+/* Pie de página */
+footer {
+  background-color: gainsboro; 
+  /* Color gris claro para distinguir el pie de página */
+
+  text-align: center; 
+  /* Centra el texto horizontalmente */
+
+  padding: 10px; 
+  /* Espacio interno del contenido */
+
+  margin-top: 20px; 
+  /* Separación respecto al contenido anterior (corregido: antes tenía un espacio entre el número y px) */
+}
