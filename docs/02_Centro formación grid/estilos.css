@@ -38,11 +38,12 @@ aside{
 section{
    border: 1px solid gray;
 }
-footer{
-   background-color: galisboro;
-}
 @media (max-width: 768px){
    main {
       grid-template-columns: 1fr;
    }
 }
+footer{
+   background-color: galisboro;
+}
+
