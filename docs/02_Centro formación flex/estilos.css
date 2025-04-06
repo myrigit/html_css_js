@@ -9,7 +9,7 @@ body{
  }
 header{
    display:grid;
-   min-height: 100px;
+   max-height: 100px;
    align-items: center;
    overflow: hidden; 
    background-color: lightblue;
@@ -27,31 +27,27 @@ nav {
    margin-bottom: 30px;
 }
 main{
-   display:flex;
-   flex-direction: row;
-   flex-wrap:wrap;
+   display:grid;
+   grid-template-columns: 1fr 3fr;
    gap: 10px;
    margin: 20px;
 }
 aside{
-  flex: 1; 
-  border: 1px solid red;
+   border: 1px solid red;
    padding: 20px;
 }
 section{
-  flex: 3; 
-  border: 1px solid gray;
+   border: 1px solid gray;
    padding: 20px;
 }
 @media (max-width: 768px){
    main {
-      flex-direction: column;
+      grid-template-columns: 1fr;
    }
 }
 footer{
    background-color: gainsboro;
    text-align: center;
    padding: 10px;
-   margin-top: 20px;
+   margin-top: 20 px;
 }
-
