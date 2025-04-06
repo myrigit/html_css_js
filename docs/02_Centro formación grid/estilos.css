@@ -16,7 +16,7 @@ header{
 }
 header img{
    display: block;
-   height: 60%;
+   height: 40%;
    max-width: 100%;
    width: auto;
    justify-self: start;
@@ -24,4 +24,5 @@ header img{
 nav {
    background-color: aliceblue;
    padding: 15px;
+   margin-bottom: 30px;
 }
