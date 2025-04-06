@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  background-color: lightblue;
+}
+header img {
+  height: 60%;
+  width: auto;
+}
+nav {
+  background-color: aliceblue;
+  padding: 10px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+aside {
+  flex: 1;
+  border: 1px solid black;
+  padding: 10px;
+}
+section {
+  flex: 3;
+  border: 1px solid black;
+  padding: 10px;
+}
+footer {
+  background-color: gainsboro;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
