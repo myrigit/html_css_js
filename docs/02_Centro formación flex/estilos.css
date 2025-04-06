@@ -34,12 +34,12 @@ main{
    margin: 20px;
 }
 aside{
-  flex 1; 
+  flex: 1; 
   border: 1px solid red;
    padding: 20px;
 }
 section{
-  flex 3; 
+  flex: 3; 
   border: 1px solid gray;
    padding: 20px;
 }
@@ -52,6 +52,6 @@ footer{
    background-color: gainsboro;
    text-align: center;
    padding: 10px;
-   margin-top: 20 px;
+   margin-top: 20px;
 }
 
