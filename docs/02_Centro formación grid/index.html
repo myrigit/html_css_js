@@ -1,47 +1,90 @@
 <!DOCTYPE html>
+<!-- Indica que el documento está escrito en HTML5 -->
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para usar acentos, eñes, etc. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Centro Formación MJM </title>
-    <link rel="stylesheet" href="estilos.css">   <!-- esto no me acuerdo nunca!!!! -->
+    <!-- Hace que la página sea responsive en móviles (escala correctamente) -->
+
+    <title>Centro Formación MJM</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlaza el archivo externo de estilos CSS. ¡No olvidar nunca esta línea! -->
   </head>
+
   <body>
+    <!-- Cuerpo principal del contenido -->
+
     <header>
+      <!-- Cabecera de la página. Aquí va el logo -->
       <img src="logo.jpg" alt="logo centro formación MJM">
+      <!-- Imagen del logotipo. El atributo alt es importante para accesibilidad -->
     </header>
+
     <nav>
+      <!-- Menú de navegación principal -->
       <a href="#cursos">Cursos</a>
       <a href="#nosotros">Sobre nosotros</a>
       <a href="#contacto">Contactos</a>
+      <!-- Los enlaces son internos. Usan "hash" para simular secciones de la página -->
     </nav>
+
     <label for="modalidad">Elige tu modalidad:</label>
+    <!-- Etiqueta asociada al desplegable, mejora la accesibilidad -->
+
     <select id="modalidad" name="modalidad">
+      <!-- Menú desplegable de selección -->
       <option value="mod1">Presencial</option>
       <option value="mod2">Online</option>
-      <option value="mod3">Mixta</option>      
+      <option value="mod3">Mixta</option>
+      <!-- Las opciones tienen valores que se usarían en formularios -->
     </select>
+
     <h1>Centro de formación de MJM</h1>
+    <!-- Título principal del contenido. Mejor colocarlo fuera del main para mantener la semántica clara -->
+
     <main>
+      <!-- Contenido principal. Aquí va la estructura de dos columnas -->
+
       <aside>
+        <!-- Columna izquierda: lista de categorías -->
         <h2>Categorías</h2>
         <ul>
           <li id="informatica">Informática</li>
           <li id="idiomas">Idiomas</li>
           <li id="ciencias">Ciencias</li>
+          <!-- Se usan ID por si se quisieran personalizar estilos con CSS -->
         </ul>
       </aside>
+
       <section>
+        <!-- Columna derecha: sección con artículos -->
         <h2>Artículos</h2>
+
         <article>
+          <!-- Primer artículo -->
           <h3>Primer artículo</h3>
-          <p>primer artículo del centro de formación</p>          
+          <p>primer artículo del centro de formación</p>
         </article>
+
         <article>
+          <!-- Segundo artículo -->
           <h3>Segundo artículo</h3>
-          <p> segundo artículo del centro de formación</p>
+          <p>segundo artículo del centro de formación</p>
         </article>
       </section>
+    </main>
+
+    <footer>
+      <!-- Pie de página con autoría y año -->
+      © 2025 Myriam Jiménez Moreno
+    </footer>
+  </body>
+</html>
+
 
     </main>
     <footer>@ 2025 Myriam Jiménez Moreno</footer>
