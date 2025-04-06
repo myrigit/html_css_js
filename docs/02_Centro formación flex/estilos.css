@@ -29,6 +29,7 @@ nav {
 main{
    display:flex;
    flex-direction: row;
+   flex-wrap:wrap;
    gap: 10px;
    margin: 20px;
 }
@@ -44,8 +45,7 @@ section{
 }
 @media (max-width: 768px){
    main {
-      flex-direction: 1 row;
-      flex-wrap:wrap;
+      flex-direction: column;
    }
 }
 footer{
