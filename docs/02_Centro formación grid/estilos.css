@@ -12,11 +12,12 @@ header{
    min-height: 60px;
    align-items: center;
    overflow: hidden;
+   background-color: lightblue;
 }
 header img{
    display: block;
    height: 60%;
-   max-width: 100%
+   max-width: 100%;
    width: auto;
-   justify-items: left;
+   justify-self: start;
 }
