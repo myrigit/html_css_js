@@ -9,9 +9,9 @@ body{
  }
 header{
    display:grid;
-   max-height: 200px;
+   height: 80px;
    align-items: center;
-   overflow: hidden;
+   /* overflow: hidden; no lo pongo porque entonces se recorta la imagen */
    background-color: lightblue;
 }
 header img{
